@@ -1,0 +1,180 @@
+<scalastyle>
+
+  <name>Scala Style Specification</name>
+
+  <!-- use of whitespace -->
+
+  <check class="org.scalastyle.file.FileLineLengthChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="ignoreImports">true</parameter>
+      <parameter name="maxLineLength"><![CDATA[79]]></parameter>
+      <parameter name="tabSize"><![CDATA[2]]></parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.file.FileTabChecker"
+         enabled="true" level="error" />
+
+  <check class="org.scalastyle.file.NewLineAtEofChecker"
+         enabled="true" level="error" />
+
+  <check class="org.scalastyle.file.WhitespaceEndOfLineChecker"
+         enabled="true" level="error" />
+
+  <check class="org.scalastyle.scalariform.NoWhitespaceAfterLeftBracketChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NoWhitespaceBeforeLeftBracketChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NoWhitespaceBeforeRightBracketChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.SpacesAfterPlusChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.SpacesBeforePlusChecker"
+         enabled="true" level="warning" />
+
+  <!-- issue warnings for missing features and tasks -->
+
+  <check class="org.scalastyle.scalariform.NotImplementedErrorUsage"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.TodoCommentChecker"
+         enabled="false" level="warning" >
+    <parameters>
+      <parameter default="TODO|FIXME" type="string" name="words"/>
+    </parameters>
+  </check>
+
+  <!-- help with version control -->
+
+  <check class="org.scalastyle.scalariform.BlockImportChecker"
+         enabled="true" level="warning" />
+
+  <!-- naming things -->
+
+  <check class="org.scalastyle.scalariform.ClassNamesChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.FieldNamesChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="regex">^[A-Za-z][A-Za-z0-9]*$</parameter>
+      <parameter name="objectFieldRegex">^[A-Za-z][A-Za-z0-9]*$</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.MethodNamesChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="regex">^(/|[a-z][A-Za-z0-9]*(_=)?)$</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.ObjectNamesChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="regex">^[A-Za-z][A-Za-z0-9]*$</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.PackageNamesChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="regex">^[a-z]+$</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.PackageObjectNamesChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="regex">^[a-z]+$</parameter>
+    </parameters>
+  </check>
+
+  <!-- effect on complexity and readability -->
+
+  <check class="org.scalastyle.file.FileLengthChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.CyclomaticComplexityChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.EmptyInterpolatedStringChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.MethodLengthChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NumberOfMethodsInTypeChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NumberOfTypesChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.ParameterNumberChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.SimplifyBooleanExpressionChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.SpaceAfterCommentStartChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.UppercaseLChecker"
+         enabled="true" level="warning" />
+
+  <!-- other -->
+
+  <check class="org.scalastyle.scalariform.CovariantEqualsChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.DeprecatedJavaChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.EqualsHashCodeChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.IfBraceChecker"
+         enabled="false" level="warning" >
+    <parameters>
+      <parameter name="singleLineAllowed">false</parameter>
+      <parameter name="doubleLineAllowed">false</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.MagicNumberChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NoCloneChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NoFinalizeChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.NullChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.OverrideJavaChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.ProcedureDeclarationChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.PublicMethodsHaveTypeChecker"
+         enabled="true" level="warning" >
+    <parameters>
+      <parameter name="ignoreOverride">true</parameter>
+    </parameters>
+  </check>
+
+  <check class="org.scalastyle.scalariform.RedundantIfChecker"
+         enabled="true" level="warning" />
+
+  <check class="org.scalastyle.scalariform.ReturnChecker"
+         enabled="true" level="warning" />
+
+</scalastyle>
