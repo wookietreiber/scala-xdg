@@ -27,6 +27,10 @@ lazy val baseSettings = Seq(
     case _                         => "-target:jvm-1.7"
   }),
   scalacOptions in (Compile, doc) ++= Seq(
+    "-doc-title", "scala-xdg",
+    "-doc-version", git.baseVersion.value,
+    "-sourcepath", (baseDirectory in ThisBuild).value.toString,
+    "-doc-source-url", s"https://github.com/wookietreiber/scala-xdg/tree/v${git.baseVersion.value}€{FILE_PATH}.scala",
     "-diagrams",
     "-groups",
     "-implicits"
