@@ -6,6 +6,9 @@ Libraries for Scala to access the standards defined by [freedesktop.org][fdo] (f
 
 ## Base Directory Specification
 
+[![Latest version](https://index.scala-lang.org/wookietreiber/scala-xdg/scala-xdg-basedir/latest.svg)](https://index.scala-lang.org/wookietreiber/scala-xdg/scala-xdg-basedir)
+[![Scaladoc](http://javadoc-badge.appspot.com/com.github.wookietreiber/scala-xdg-basedir_2.12.svg?label=scaladoc)](http://javadoc-badge.appspot.com/com.github.wookietreiber/scala-xdg-basedir_2.12)
+
 The **basedir** sub-project contains an implementation of the [Base Directory Specification][basedir].
 
 ```scala
