@@ -8,11 +8,11 @@ enablePlugins(GitVersioning)
 
 val scala210 = "2.10.7"
 val scala211 = "2.11.12"
-val scala212 = "2.12.5"
+val scala212 = "2.12.6"
 
 lazy val baseSettings = Seq(
   organization := "com.github.wookietreiber",
-  git.baseVersion := "0.1.0",
+  git.baseVersion := "0.2.0",
   scalaVersion := scala212,
   crossScalaVersions := Seq(scala210, scala211, scala212),
   scalacOptions ++= Seq(
