@@ -1,0 +1,1 @@
+This is the documentation for the '''freedesktop.org''' [[org.freedesktop.basedir base directory specification]] for Scala.

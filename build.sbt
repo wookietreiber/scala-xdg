@@ -31,6 +31,7 @@ lazy val baseSettings = Seq(
     "-groups",
     "-implicits"
   ),
+  autoAPIMappings := true,
   scalastyleConfig := file(".scalastyle-config.xml"),
   wartremoverErrors in (Compile, compile) ++= Seq(
     Wart.ArrayEquals,
@@ -80,7 +81,10 @@ noPublish
 lazy val basedir = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   .settings(
     name := "scala-xdg-basedir",
-    baseSettings
+    baseSettings,
+    scalacOptions in (Compile, doc) ++= Seq(
+      "-doc-root-content", "basedir/rootdoc.txt"
+    )
     // TODO apiURL
   )
   .jsSettings()

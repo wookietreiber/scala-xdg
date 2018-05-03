@@ -8,7 +8,7 @@ import java.nio.file.Paths
 
 /** This package contains an implementation of the
   * [[http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
-  * XDG Base Directory Specification]].
+  * Base Directory Specification]].
   */
 package object basedir {
 
